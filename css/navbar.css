@@ -1,0 +1,30 @@
+/* navbar.css */
+
+/* Styles pour la barre de navigation */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}

@@ -1,0 +1,21 @@
+/* Styles pour la barre de navigation */
+/* Styles pour le corps principal de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding-top: 70px; /* Espace pour la barre de navigation */
+    text-align: center;
+}
+
+
+
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+}

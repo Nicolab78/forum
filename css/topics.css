@@ -1,0 +1,30 @@
+/* Style pour la liste des topics */
+.topic {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.topic h3 {
+    margin: 0;
+    color: #007bff; /* Couleur pour rendre le titre plus visible */
+}
+
+.topic p {
+    margin: 10px 0;
+}
+
+/* Style pour le lien Créer un nouveau Topic */
+a.create-topic {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+}
+
+a.create-topic:hover {
+    text-decoration: underline;
+}
