@@ -28,4 +28,9 @@ class TopicController {
     public function readAll() {
         return $this->topicModel->readAll();
     }
+
+    // Supprimer un topic par ID
+    public function deleteTopic($id) {
+        return $this->topicModel->delete($id);
+    }
 }

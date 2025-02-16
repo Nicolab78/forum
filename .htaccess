@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# Activer les URLs propres
+RewriteRule ^login/?$ views/login.php [L]
+RewriteRule ^register/?$ views/register.php [L]
+RewriteRule ^topics/?$ views/topics.php [L]
+RewriteRule ^topic/([0-9]+)/?$ views/topic.php?topic_id=$1 [L]
+
+# Empêcher l'accès direct aux fichiers sensibles
+<FilesMatch "(config\.php|database\.sql)">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>

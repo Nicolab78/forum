@@ -51,4 +51,17 @@ class Topic {
 
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    public function delete($topic_id) {
+        $query = "DELETE FROM " . $this->table . " WHERE topic_id = :topic_id";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(':topic_id', $topic_id, PDO::PARAM_INT);
+    
+        if ($stmt->execute()) {
+            return true;
+        }
+    
+        return false;
+    }
+    
 }

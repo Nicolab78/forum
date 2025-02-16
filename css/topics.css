@@ -1,30 +1,82 @@
-/* Style pour la liste des topics */
+/* Style global */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 30px;
+    color: #333;
+    text-align: center;
+}
+
+/* Liste des topics */
+.topic-container {
+    width: 80%;
+    max-width: 900px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
 .topic {
-    border: 1px solid #ddd;
-    padding: 15px;
+    background-color: #ffffff;
+    padding: 20px;
     margin-bottom: 20px;
-    border-radius: 8px;
-    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.topic:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .topic h3 {
+    font-size: 1.6em;
+    color: #007bff;
     margin: 0;
-    color: #007bff; /* Couleur pour rendre le titre plus visible */
+    font-weight: bold;
 }
 
 .topic p {
-    margin: 10px 0;
+    font-size: 1em;
+    color: #555;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 /* Style pour le lien Créer un nouveau Topic */
 a.create-topic {
     display: inline-block;
     margin-bottom: 20px;
-    font-weight: bold;
-    color: #007bff;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
     text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 a.create-topic:hover {
+    background-color: #0056b3;
+}
+
+/* Style des liens dans les topics */
+.topic a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.topic a:hover {
     text-decoration: underline;
 }

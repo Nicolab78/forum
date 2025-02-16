@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /controller/
+Disallow: /config.php
+Allow: /
+
+Sitemap: https://ton-site.com/sitemap.xml

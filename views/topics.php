@@ -10,7 +10,6 @@ $stmt = $db->prepare($query);
 $stmt->execute();
 $topics = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -27,12 +26,15 @@ $topics = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <h2>Liste des Topics</h2>
     <a href="create_topic.php" class="create-topic">Créer un nouveau Topic</a><br><br>
 
-    <?php foreach ($topics as $topic): ?>
-        <div class="topic">
-            <h3><a href="topic.php?topic_id=<?= $topic['topic_id'] ?>"><?= htmlspecialchars($topic['title']) ?></a></h3>
-            <p>Créé par : <?= htmlspecialchars($topic['username']) ?> le <?= $topic['created_at'] ?></p>
-        </div>
-    <?php endforeach; ?>
+    <div class="topic-container">
+        <?php foreach ($topics as $topic): ?>
+            <div class="topic">
+                <h3><a href="topic.php?topic_id=<?= $topic['topic_id'] ?>"><?= htmlspecialchars($topic['title']) ?></a></h3>
+                <p>Créé par : <?= htmlspecialchars($topic['username']) ?> le <?= $topic['created_at'] ?></p>
+            </div>
+        <?php endforeach; ?>
+    </div>
 
 </body>
 </html>
+

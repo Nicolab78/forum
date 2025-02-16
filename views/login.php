@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/login.css">
+    <meta name="description" content="Connectez-vous pour accéder à votre compte et participer aux discussions du forum.">
+    <meta name="keywords" content="connexion, login, forum, compte utilisateur">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Connexion - Forum de discussion">
+    <meta property="og:description" content="Accédez à votre compte sur le forum pour échanger avec la communauté.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ton-site.com/login">
+    <meta property="og:image" content="https://ton-site.com/assets/login-banner.jpg">
 
-    <title>Connexion</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Connexion - Forum</title>
 </head>
 <body>
     <div class="login-container">

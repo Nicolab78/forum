@@ -71,6 +71,9 @@ if (!$user) {
             echo "<div>";
             echo "<a href='topic.php?topic_id=" . $topic['topic_id'] . "'>" . htmlspecialchars($topic['title']) . "</a>";
             echo "<p>Créé le : " . $topic['created_at'] . "</p>";
+            // Lien pour supprimer un topic
+            echo "<a href='../controller/delete_topic.php?topic_id=" . $topic['topic_id'] . "' onclick='return confirm(\"Êtes-vous sûr de vouloir supprimer ce topic ?\")'>Supprimer</a>";
+
             echo "</div><hr>";
         }
     } else {
